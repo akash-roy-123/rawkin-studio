@@ -51,10 +51,10 @@ The website uses relative asset URLs and a Vite `base: './'` setting, so it can 
 
 ## Site content and behavior
 
-- Hero and product gallery use **crops of the user's supplied photographs** of the original RawKin display. They are not replacement studio product shots. The original printing is visibly part of the photos.
+- Hero and product gallery use **generated, styled studio concept images** of the RawKin product collection, not photographs of the physical products. Packaging appearance is illustrative and may differ from the shipped products.
 - Products: Matcha + Chamomile Calming Face Scrub (100 g), Matcha + Peppermint Detoxifying Clay Mask (100 g), Matcha + Vanilla Cooling Lip Balm (5 g).
-- Functional responsive mobile menu, anchored site navigation, keyboard-accessible product detail dialogs with Escape dismissal and focus containment, FAQ accordion, and product enquiry email links.
-- The enquiry links use the RawKin contact email visible on the user's label: `hellorawkin@gmail.com`.
+- Functional responsive mobile menu, homepage section navigation, a dedicated hash-routed `#/contact` page compatible with GitHub Pages, product-detail dialogs, FAQ accordion, and direct Instagram ordering links.
+- Order buttons open the brand Instagram profile at `https://www.instagram.com/rawkin.in/`. The Contact page also uses `hellorawkin@gmail.com` from the product label; its form only composes an email draft in the visitor's email app (no hosted forms backend).
 - **No prices, checkout, inventory, payment processing, real reviews, or unsupported skincare/medical efficacy claims have been invented.** Order enquiries open the customer's email application.
 - Ingredient details for the scrub are limited to the legible packaging supplied. Other product ingredient lists should be confirmed by the brand owner before publishing.
 
@@ -62,7 +62,7 @@ The website uses relative asset URLs and a Vite `base: './'` setting, so it can 
 
 - Have RawKin approve all brand copy, claims, contact information, and photographs.
 - Confirm the complete ingredient declarations, directions, batch details, product safety and regulatory label disclosures with the brand owner.
-- Replace display-banner crops with original high-resolution packshots when available.
+- Confirm the generated studio concept images accurately represent the final shipped packaging; consider adding genuine high-resolution packshots and clearly distinguishing renders where appropriate.
 - Add verified pricing, delivery/returns terms, privacy policy and (if required) checkout with an actual commerce provider.
 - Use only authentic customer testimonials when obtained with permission.
 
@@ -70,11 +70,11 @@ The website uses relative asset URLs and a Vite `base: './'` setting, so it can 
 
 ```text
 src/
-  App.tsx        # Responsive homepage, product detail dialogs, FAQ and mail enquiry
+  App.tsx        # Homepage, contact page, Instagram ordering, product dialogs and FAQ
   main.tsx       # React entry point
   styles.css     # Complete visual design and breakpoints
 public/
-  images/        # Optimized WebP crops of supplied original photographs
+  images/        # Optimized WebP generated studio concept product visuals
   favicon.svg    # Original RawKin-inspired monogram illustration
 .github/workflows/deploy.yml
 ```
