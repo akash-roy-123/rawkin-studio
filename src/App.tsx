@@ -19,7 +19,7 @@ const products: Product[] = [
     id: 'chamomile-scrub', number: '01', subtitle: 'MATCHA + CHAMOMILE',
     name: 'Calming Face Scrub', category: 'THE GENTLE RESET', size: '100 g',
     photo: './images/scrub.webp',
-    alt: 'RawKin Matcha and Chamomile Calming Face Scrub jar pictured in the original brand display',
+    alt: 'RawKin Matcha and Chamomile Calming Face Scrub jar shown in a styled botanical studio photograph',
     note: 'A little moment to reset your skincare ritual.',
     ritual: 'Apply a small amount to damp skin, gently massage in circular motions and rinse with water, as directed on the product label.',
     details: 'The ingredient label lists glycerin, jojoba oil, matcha powder, chamomile extract and sugar, among other ingredients.',
@@ -28,7 +28,7 @@ const products: Product[] = [
     id: 'peppermint-mask', number: '02', subtitle: 'MATCHA + PEPPERMINT',
     name: 'Detoxifying Clay Mask', category: 'THE WEEKLY RITUAL', size: '100 g',
     photo: './images/mask.webp',
-    alt: 'RawKin Matcha and Peppermint Detoxifying Clay Mask jar pictured in the original brand display',
+    alt: 'RawKin Matcha and Peppermint Detoxifying Clay Mask jar shown in a styled botanical studio photograph',
     note: 'An invitation to make time for yourself.',
     ritual: 'Follow the directions on your product label. For any ingredient or suitability questions, contact RawKin before use.',
     details: 'A matcha and peppermint clay-mask concept, as named on the original packaging. Full formulation details are available from the maker.',
@@ -37,10 +37,10 @@ const products: Product[] = [
     id: 'vanilla-balm', number: '03', subtitle: 'MATCHA + VANILLA',
     name: 'Cooling Lip Balm', category: 'THE EVERYDAY ESSENTIAL', size: '5 g',
     photo: './images/lip-balm.webp',
-    alt: 'RawKin Matcha and Vanilla Cooling Lip Balm tube pictured in the original brand display',
+    alt: 'RawKin Matcha and Vanilla Cooling Lip Balm tube shown in a styled botanical studio photograph',
     note: 'The smallest ritual, ready to travel with you.',
     ritual: 'Use as directed on the product label. Ask RawKin if you have questions about ingredients or suitability.',
-    details: 'A matcha and vanilla lip balm as pictured in the original brand display.',
+    details: 'A matcha and vanilla lip balm as shown in a styled botanical studio photograph.',
   },
 ];
 
@@ -126,8 +126,8 @@ export default function App() {
             </div>
             <div className="hero-visual" aria-label="RawKin handmade skincare product collection">
               <div className="hero-visual-blob" />
-              <div className="hero-main-photo"><img src="./images/lookbook-jars.webp" alt="The two RawKin face-care jars photographed in the original brand display" fetchPriority="high" /></div>
-              <div className="hero-floating-photo"><img loading="eager" src="./images/lookbook-balm.webp" alt="RawKin Matcha and Vanilla lip balm from the original display" /></div>
+              <div className="hero-main-photo"><img src="./images/lookbook-jars.webp" alt="Two RawKin face-care jars in a styled botanical studio photograph" fetchPriority="high" /></div>
+              <div className="hero-floating-photo"><img loading="eager" src="./images/lookbook-balm.webp" alt="RawKin Matcha and Vanilla lip balm in a styled botanical studio photograph" /></div>
               <div className="hero-seal"><Icon name="spark" size={21} /><span>HANDMADE<br />IN SMALL<br />BATCHES</span></div>
               <div className="hero-img-caption">THE RAWKIN COLLECTION <span>— 001</span></div>
             </div>
